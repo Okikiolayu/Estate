@@ -1,0 +1,136 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.here{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(house22.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    display: flex;
+    width: 80%;
+    margin-left: 0px;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+
+}
+
+nav ul li{
+    display:inline-flex;
+    list-style: none;
+    margin: 10px 20px ;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(0, 162, 255);
+    font-weight: bolder;
+    text-align: right;
+}
+
+nav ul li a:hover{
+    color: cornsilk;
+    text-decoration: solid;
+}
+
+.detel{
+    margin-left: 30px;
+    margin-top: 30px;
+    text-align: center;
+
+}
+
+.detel h1{
+    color:skyblue;
+    font-size: 50px;
+}
+
+.detel p{
+    color: rgb(127, 172, 255);
+}
+
+.detel h3{
+    margin: 0px;
+    padding: 0px;
+    font-size: 30px;
+    color: azure;
+
+}
+
+form{
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+input{
+    background-color: rgba(165, 42, 42, 0);
+    border-radius: 5px;
+    padding: 6px;
+    font-weight: bolder;
+    color: azure;
+}
+
+button{
+    border: none;
+    border-radius: 20px;
+    color: green;
+    background: rgb(230, 235, 231);
+    padding: 5px;
+    font-weight: bolder;
+    font-size: medium;
+    margin: auto;
+    display: inline-block;
+
+
+    
+}
+
+nav .fa{
+    display: none;
+    width:10px;
+}
+
+@media(max-width:1020px){
+    .detel h1{
+        font-size: 35px;
+    }
+.nav-links ul li{
+    display: block;
+}
+.nav-links{
+    position: absolute;
+    background:rgb(156, 12, 192);
+    height:100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+}
+
+nav .logo{
+    width:100px;
+}
+
+nav .fa{
+    display:block;
+    font-size: 10px;
+    cursor:pointer;
+}
+
+}

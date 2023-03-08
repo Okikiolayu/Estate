@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="YUSUFF Fawas">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Estate management</title>
+    <link rel="stylesheet"href="index.css">
+</head>
+<body>
+    <div class="here">
+        <nav>
+            <img src="logo2.jpg" class="logo">
+            <div class="nav-links" id="navLinks">
+                <img src="close b1.png" class="fa" onclick="hideMenue()">
+            <ul>
+                <li><a href="#"><b>Home</b></a></li>
+                <li><a href="#"><b>Properties</b></a></li>
+                <li><a href="#"><b>Agents</b></a></li>
+                <li><a href="#"><b>Contact Us</b></a></li>
+                <li><a href="#"><b>About Us</b></a></li>
+            </ul>
+            </div>
+            <img src="menu1.png" class="fa" onclick="showMenue()">
+        </nav>
+        <div class="detel">
+            <h1> Buy & Sell Property Here</h1>
+            <p>Need a perfect place to live right now? Here is the best offer for you! Amazing house with the<br>most comfort layout is fully equipped with everything needed.</p><br><br><br>
+
+
+            <h3> Register with us</h3>
+            <form style="background-color: rgba(241, 238, 238, 0.014);">
+                <div>
+                    
+                    <input class="" type="text" name="firstname" placeholder="firstname">
+                </div>
+                <div>
+                    <label></label>
+                    <input type="text"name="lastname" placeholder="lastname">
+                </div>
+
+                <div>
+                    <label></label>
+                    <input type="text"name="middlename" placeholder="middlename">
+                </div>
+
+                <div>
+                    <label></label>
+                    <input type="text"name="email"placeholder="email">
+                </div>
+
+                <div>
+                    <label></label>
+                    <input type="text"name="password"placeholder="password">
+                </div>
+
+            </form><br><br>
+
+            <button type="submit"> SUBMITE </button>
+        </div>
+    </div>
+
+
+    <!--------------javascript-------------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenue(){
+            navLinks.style.right ="0";
+        }
+        function hideMenue(){
+            navLinks.style.right="-200px"
+        }
+    </script>
+</body>
+</html>
